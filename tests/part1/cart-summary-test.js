@@ -3,7 +3,7 @@ var expect = chai.expect;   // We are using the "expect" style of Chai.
 var CartSummary = require('./../../src/part1/cart-summary');
 
 describe('CartSummary', function () {
-    it('getSubtotal() should return 0 if no items are passed in', function () {
+    it('getSubtotal() should return the sum of the price * quantity for all items', function () {
         var cartSummary = new CartSummary([
             {
                 id: 1,
