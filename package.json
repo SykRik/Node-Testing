@@ -9,7 +9,9 @@
   "dependencies": {
     "chai": "^3.5.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "sinon": "^1.17.4"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

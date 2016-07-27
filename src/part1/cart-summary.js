@@ -12,4 +12,10 @@ CartSummary.prototype.getSubtotal = function () {
     return 0;
 };
 
+CartSummary.prototype.getTax = function(){
+    tax.calculate(this.getSubtotal(), state, function(){
+        done(taxInfo.amount);
+    });
+};
+
 module.exports = CartSummary;
